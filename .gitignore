@@ -1,7 +1,37 @@
-node_modules/
+# Sistema Operativo
 .DS_Store
-*.log
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editores y IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Node.js (si se usa para build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Variables de entorno
 .env
 .env.local
-dist/
-build/
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+.cache/
