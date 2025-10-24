@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polpo</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img class="navbar-logo navbar-logo--inverse" src="images/logo-blanco.svg" alt="Polpo Logo">
+                <img class="navbar-logo navbar-logo--color" src="images/logo-color.png" alt="Polpo Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryNav" aria-controls="primaryNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="primaryNav" aria-labelledby="primaryNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="primaryNavLabel">
+                        Poplo menu
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label=""></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto gap-2 align-items-center">
+						<li class="nav-item">
+							<a class="nav-link" href="/productos-servicios.html">Productos y Servicios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/industrias.html">Industrias</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/casos-de-exito.html">Casos de Éxito</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/nosotros.html">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/actualidad.html">Actualidad</a>
+						</li>
+						<div class="nav-item">
+							<a class="btn btn-primary" href="/contacto.html">
+								Contacto
+							</a>
+						</div>
+						<div class="nav-item">
+							<a class="btn btn-secondary" href="">
+								EN
+							</a>
+						</div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="primary" class="site-main">
+	<section class="hero position-relative overflow-hidden">
+		<video class="hero-video w-100 object-fit-cover" src="assets/video/bg-hero.mp4" autoplay muted loop playsinline></video>
+		<div class="hero-content container-fluid position-relative">
+			<div class="row align-items-end">
+				<div class="col-12 col-lg-6">
+					<h1>
+						Gestión automatizada y predictiva de los riesgos de fatiga
+					</h1>
+					<p class="lead">
+						Optimizamos la seguridad, productividad y salud de tus trabajadores con tecnologías únicas en Latinoamérica
+					</p>
+				</div>
+				<div class="col-12 col-lg-6 text-end d-flex flex-column justify-content-center align-items-center align-items-lg-end gap-3 mt-5 mt-lg-0">
+                    <a class="btn btn-primary arrow-next" href="#reservations">
+                        Agendar una demo
+					</a>
+                    <a href="#" class="btn btn-outline-primary arrow-next">Conoce nuestros productos</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="productos-servicios">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="big-block">
+						<h2>Productos y servicios</h2>
+						<p class="lead">S.A.R.A. es una plataforma inteligente que ayuda a prevenir riesgos de fatiga y somnolencia en tiempo real, entregando datos claros y alertas inmediatas para cuidar la seguridad, salud y productividad de los trabajadores.</p>
+						<div class="row row-gap-4">
+							<div class="col-12 col-md-6 col-lg-6">
+								<div class="card-product" style="background-image: url(images/bg-frms.jpg);">
+                                    <img src="images/logo-sara.svg" alt="">
+									<h3>S.A.R.A. FRMS</h3>
+									<p>Automatiza el control de fatiga en tiempo real</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<div class="card-product" style="background-image: url(images/bg-alert.jpg);">
+                                    <img src="images/logo-sara.svg" alt="">
+									<h3>S.A.R.A. Alert</h3>
+									<p>Mide el estado de alerta en 1 minuto</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<div class="card-product" style="background-image: url(images/bg-whatsapp.jpg);">
+                                    <img src="images/logo-sara.svg" alt="">
+									<h3>S.A.R.A. Whatsapp</h3>
+									<p>Consulta y recibe alertas desde tu celular.</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<div class="card-product" style="background-image: url(images/bg-ia.jpg);">
+                                    <img src="images/logo-sara.svg" alt="">
+									<h3>S.A.R.A. IA</h3>
+									<p>Gestión avanzada de controles críticos de fatiga</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="servicios">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-12">
+					<h2>Servicios</h2>
+					<p class="lead pe-3">En Polpo acompañamos a las empresas con exámenes especializados, terapias de apoyo, programas de seguimiento y soporte integral para gestionar la fatiga y cuidar la seguridad laboral.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-6 col-xl-3">
+					<img src="https://www.placehold.co/315x315/3347FF/ffffff" alt="" class="thumbnail-service">
+					<div class="card-service">
+						<h3>Exámenes</h3>
+						<ul>
+							<li>Salud compatible asociado a la fatiga</li>
+							<li>Oximetría</li>
+							<li>Poligrafía</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-xl-3">
+					<img src="https://www.placehold.co/315x315/3347FF/ffffff" alt="" class="thumbnail-service">
+					<div class="card-service">
+						<h3>Terapias</h3>
+						<ul>
+							<li>Cpap</li>
+							<li>Oxigenoterapia</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-xl-3">
+					<img src="https://www.placehold.co/315x315/3347FF/ffffff" alt="" class="thumbnail-service">
+					<div class="card-service">
+						<h3>Seguimiento</h3>
+						<p>Adherencia al programa. Controles de tratamientos indicados</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-xl-3">
+					<img src="https://www.placehold.co/315x315/3347FF/ffffff" alt="" class="thumbnail-service">
+					<div class="card-service">
+						<h3>Soporte</h3>
+						<ul>
+							<li>Inducción y entrenamiento</li>
+							<li>Gestión controles críticos de fatiga y somnolencia</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="cifras">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-12 mb-5">
+					<h2>Nuestras cifras</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center row-gap-4">
+				<div class="col-12 col-md-6 col-lg-7">
+					<div class="card-cifras h-100">
+						<span class="card-cifra-value">+10.000</span>
+						<p class="card-cifra-bajada">Trabajadores monitoreados en distintas industrias</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-5">
+					<div class="card-cifras h-100">
+						<span class="card-cifra-value">-80%</span>
+						<p class="card-cifra-bajada">de ahorro en tiempo</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-5">
+					<div class="card-cifras h-100">
+						<span class="card-cifra-value">100%</span>
+						<p class="card-cifra-bajada">menos incidentes</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-7">
+					<div class="card-cifras h-100">
+						<span class="card-cifra-value">+500.000</span>
+						<p class="card-cifra-bajada">consultas diarias</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="casos">
+		<div class="container-fluid">
+			<div class="row justify-content-center justify-content-center caso-destacado">
+				<div class="col-10 col-lg-5 d-flex flex-column">
+					<h2 class="align-self-start">Casos de éxito</h2>
+					<h3>Como Viggo mejoró la gestión de sus faenas incorporando tecnología de Polpo</h3>
+					<p>Con S.A.R.A. IA, Viggo fortaleció la seguridad de sus conductores, redujo los riesgos asociados a la fatiga y optimizó la continuidad de sus operaciones de transporte</p>
+					<a href="#">Ver más →</a>
+				</div>
+				<div class="col-12 col-lg-5 mt-5 mt-lg-0 text-center">
+					<img class="img-fluid caso-thumbnail-home" src="images/caso-exito-home.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="clientes">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-12 text-center mb-5">
+					<h2>Nuestros clientes</h2>
+				</div>
+				<div class="col-12">
+					<div class="clientes-logos">
+						<img src="https://www.placehold.co/220x100?text=Cliente+1" alt="Cliente 1 Logo">
+						<img src="https://www.placehold.co/220x100?text=Cliente+2" alt="Cliente 2 Logo">
+						<img src="https://www.placehold.co/220x100?text=Cliente+3" alt="Cliente 3 Logo">
+						<img src="https://www.placehold.co/220x100?text=Cliente+4" alt="Cliente 4 Logo">
+						<img src="https://www.placehold.co/220x100?text=Cliente+5" alt="Cliente 5 Logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-11 col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                <!-- LOGO -->
+                <div class="footer-brand mb-4">
+                    <img class="footer-logo" src="images/logo-blanco.svg" alt="">
+                </div>
+                <!-- MENU -->
+                <nav class="footer-menu mb-4">
+                    <ul class="list-unstyled d-flex flex-wrap gap-4 mb-0 align-items-center">
+                        <li><a href="/productos-servicios.html">Productos y Servicios</a></li>
+                        <li><a href="/industrias.html">Industrias</a></li>
+                        <li><a href="/casos-de-exito.html">Casos de Éxito</a></li>
+                        <li><a href="/nosotros.html">Nosotros</a></li>
+                        <li><a href="/actualidad.html">Actualidad</a></li>
+                        <li><a href="/contacto.html" class="btn btn-primary">Contacto</a></li>
+                        <li><a href="#" class="btn btn-outline-primary">Trabaja con nosotros</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-11 col-lg-3">
+                <!-- DIRECCION -->
+                <p class="footer-address mb-0">
+                    <span>Santiago</span>
+                    Avda. Apoquindo 7935, oficina 804-B <br>
+                    Las Condes, Santiago. <br>
+                    <a href="mailto:contacto@polpo.cl">contacto@polpo.cl</a>
+                </p>
+            </div>
+            <div class="col-11 col-lg-3">
+                <p class="footer-address mb-0">
+                    <span>Antofagasta</span>
+                    Sucre 220, oficina 506.<br>
+                    Edificio Bulnes. Antofagasta<br>
+                    <a href="mailto:contacto@polpo.cl">contacto@polpo.cl</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-11 col-lg-12 border-top mt-3 pt-5 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+                <!-- REDES SOCIALES -->
+                <ul class="footer-social list-unstyled d-flex flex-wrap gap-2 mb-0" aria-label="">
+                    <li>
+                        <a class="footer-social__link" href="#" target="_blank" rel="nofollow noopener">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span class="visually-hidden">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-social__link" href="#" target="_blank" rel="nofollow noopener">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span class="visually-hidden">Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="footer-copyright ms-auto mb-0">Derechos Reservados &copy; 2025 Polpo</p>
+                <ul class="legal">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
