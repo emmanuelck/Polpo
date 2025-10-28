@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home">
 
 <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-lg py-3">
@@ -50,7 +53,7 @@
 							<a class="nav-link" href="actualidad.html">Actualidad</a>
 						</li>
 						<div class="nav-item">
-							<a class="btn btn-primary" href="contacto.html">
+							<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
 								Contacto
 							</a>
 						</div>
@@ -69,7 +72,7 @@
 <main id="primary" class="site-main">
 	<section class="hero position-relative overflow-hidden">
 		<video class="hero-video w-100 object-fit-cover" src="assets/video/bg-hero.mp4" autoplay muted loop playsinline></video>
-		<div class="hero-content container-fluid position-relative">
+		<div class="hero-content container position-relative">
 			<div class="row align-items-end">
 				<div class="col-12 col-lg-6">
 					<h1>
@@ -80,9 +83,9 @@
 					</p>
 				</div>
 				<div class="col-12 col-lg-6 text-end d-flex flex-column justify-content-center align-items-center align-items-lg-end gap-3 mt-5 mt-lg-0">
-                    <a class="btn btn-primary arrow-next" href="#reservations">
-                        Agendar una demo
-					</a>
+                    <button class="btn btn-primary arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
+                        Contacto
+					</button>
                     <a href="#" class="btn btn-outline-primary arrow-next">Conoce nuestros productos</a>
 				</div>
 			</div>
@@ -90,7 +93,7 @@
 	</section>
 
 	<section class="productos-servicios">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="big-block">
@@ -133,7 +136,7 @@
 	</section>
 
 	<section class="servicios">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-12">
 					<h2>Servicios</h2>
@@ -184,7 +187,7 @@
 	</section>
 	
 	<section class="cifras">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-12 mb-5">
 					<h2>Nuestras cifras</h2>
@@ -220,22 +223,60 @@
 	</section>
 
 	<section class="casos">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-center justify-content-center caso-destacado">
-				<div class="col-10 col-lg-5 d-flex flex-column">
+				<div class="col-10 col-lg-6 d-flex flex-column">
 					<h2 class="align-self-start">Casos de éxito</h2>
 					<h3>Como Viggo mejoró la gestión de sus faenas incorporando tecnología de Polpo</h3>
 					<p>Con S.A.R.A. IA, Viggo fortaleció la seguridad de sus conductores, redujo los riesgos asociados a la fatiga y optimizó la continuidad de sus operaciones de transporte</p>
 					<a href="#">Ver más →</a>
 				</div>
-				<div class="col-12 col-lg-5 mt-5 mt-lg-0 text-center">
+				<div class="col-12 col-lg-6 mt-5 mt-lg-0 text-center">
 					<img class="img-fluid caso-thumbnail-home" src="images/caso-exito-home.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="clientes">
+	<section class="testimonios mb-5">
+		<div class="container">
+			<div class="row justify-content-center align-items-center caso-destacado">
+				<div class="col-12 col-lg-12">
+					<div class="owl-carousel carousel-testimonios">
+						<div class="item">
+							<div class="row justify-content-center">
+								<div class="col-10 col-lg-3 text-center mb-5 mb-lg-0">
+									<img class="img-fluid" src="https://www.placehold.co/265/00C9FF/ffffff" alt="">
+								</div>
+								<div class="col-10 col-lg-6 col-xl-9">
+									<p>Polpo se ha destacado a nivel nacional, y específicamente a nivel de la salud ocupacional en Minería, como un aliado estratégico en el desarrollo de programas relacionados con fatiga y somnolencia.</p>
+									<p>Se destaca que se implementado un programa robusto de FyS entre Mutual de Seguridad y POLPO,  en Minera Escondida y que demuestra un caso de éxito en la industria, al implementar una tecnología que puede salvar vidas y mejorar la calidad de vida de los trabajadores.</p>
+									<strong>Jorge Guerra Chirino</strong>
+									<br>
+									<small>Médico Director de Salud Ocupacional en Minería.Becado Magíster en Higiene y Salud Ocupacional.</small>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row justify-content-center">
+								<div class="col-10 col-lg-3 text-center mb-5 mb-lg-0">
+									<img class="img-fluid" src="https://www.placehold.co/265/FF5733/ffffff" alt="">
+								</div>
+								<div class="col-10 col-lg-6 col-xl-9">
+									<p>SARA me ha ayudado en la gestión administrativa y en la toma de decisiones basada en datos objetivos, me ha permitido hacer más eficiente mi trabajo al automatizar tareas administrativas, optimizando la gestión de tiempos y enfocarme en tareas cruciales, como las evaluaciones médicas con mayor precisión y eficiencia. Además, realiza un análisis detallado de los datos médicos, proporcionando un nivel de riesgo objetivo que me facilita la preparación de un plan de trabajo enfocado en los casos de mayor riesgo operacional en la faena minera.</p>
+									<strong>Daniela Cortes</strong>
+									<br>
+									<small>Enfermera Especialista en Salud Ocupacional</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="clientes mt-5 pt-5">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-12 text-center mb-5">
@@ -256,7 +297,7 @@
 </main>
 
 <footer class="site-footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-11 col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between">
                 <!-- LOGO -->
@@ -271,7 +312,7 @@
                         <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="actualidad.html">Actualidad</a></li>
-                        <li><a href="contacto.html" class="btn btn-primary">Contacto</a></li>
+                        <li><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal">Contacto</button></li>
                         <li><a href="#" class="btn btn-outline-primary">Trabaja con nosotros</a></li>
                     </ul>
                 </nav>
@@ -329,7 +370,24 @@
     </div>
 </footer>
 
+<!-- MODAL -->
+<div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h3>(Desarrollo para cotizacion de exámenes)</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="js/scripts.js"></script>
 </body>
 </html>

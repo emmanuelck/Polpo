@@ -54,8 +54,8 @@ h2{
     font-family: 'Quicksand', sans-serif;
     background: #00C9FF;
     border-color: #00C9FF;
-    /* min-width: 350px; */
 }
+
 .btn.arrow-next::after{
     content: '';
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.53674e-07 4.48785C-0.000710487 4.8865 0.335348 5.21021 0.750644 5.21092L11.2468 5.22835C11.6621 5.22903 11.9993 4.90645 12 4.50781C12.0007 4.10917 11.6647 3.78542 11.2494 3.78474L0.753278 3.76731C0.337982 3.7666 0.000713348 4.08921 9.53674e-07 4.48785Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.7879 0.210516C6.49373 0.491926 6.49291 0.948961 6.78608 1.23133L10.1845 4.50479L6.7743 7.7669C6.48013 8.04831 6.47928 8.50534 6.77245 8.78771C7.06558 9.07008 7.54171 9.07086 7.83587 8.78945L11.6643 5.12723C12.0217 4.78541 12.0227 4.23024 11.6666 3.88723L7.85135 0.212293C7.55819 -0.0700739 7.08209 -0.0708595 6.7879 0.210516Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -122,7 +122,7 @@ nav.navbar.navbar--scrolled .navbar-logo--color{
 .site-header{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.site-header.site-header--hidden{
+.site-header--hidden{
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
@@ -136,6 +136,14 @@ nav.navbar.navbar--scrolled .navbar-logo--color{
     color: #fff;
     font-weight: 600;
     font-size: 0.875rem;
+}
+.home .site-header .btn-primary{
+    background: #3347FF;
+    border-color: #3347FF;
+}
+.home main .btn-primary,
+.home main .btn-outline-primary{
+    width: 350px;
 }
 .site-header nav.navbar.navbar--scrolled .btn-primary{
     color: #fff;
@@ -449,14 +457,14 @@ footer .footer-menu a{
     color: #fff;
     text-decoration: none;
 }
-footer .footer-menu a.btn-primary{
+footer .footer-menu .btn-primary{
     background: #1F80FF;
     border-color: #1F80FF;
     color: #fff;
     font-weight: 600;
     font-size: 0.875rem;
 }
-footer .footer-menu a.btn-outline-primary{
+footer .footer-menu .btn-outline-primary{
     background: transparent;
     border-color: #fff;
     color: #fff;
@@ -636,16 +644,29 @@ body.interior .nav-pills .nav-link{
     padding: 14px 25px;
 }
 
-body.interior.page-productos-y-servicios h3{
+body.interior.page-productos-y-servicios main h3{
     font-size: 3.125rem;
     font-family: 'Quicksand', sans-serif;
     color: #3347FF;
     letter-spacing: -2.5px;
 }
-body.interior.page-productos-y-servicios h4{
+body.interior.page-productos-y-servicios main h4{
     font-family: 'Quicksand', sans-serif;
     color: #3347FF;
     font-weight: 600;
+}
+body.interior.page-productos-y-servicios .inner-navigation{
+    transform: translateY(0%);
+    transition: transform 0.3s ease;
+}
+body.interior.page-productos-y-servicios .inner-navigation .nav-pills{
+    background: rgba(247, 245, 241, 0);
+    padding: 10px 0;
+    backdrop-filter: blur(0px);
+}
+body.interior.page-productos-y-servicios .inner-navigation.active .nav-pills{
+    background: rgba(247, 245, 241, 0.8);
+    backdrop-filter: blur(10px);
 }
 /* PAGE INDUSTRIAS */
 .card-industria{
@@ -820,7 +841,117 @@ body.interior.page-productos-y-servicios h4{
 }
 
 /*FORM*/
-.contact-form .form-control{
-    background: #EBEDFD;
+.contact-form .form-control,
+.contact-form .form-select{
+    background-color: #EBEDFD;
     border: none;
+}
+
+/*MODAL OVERLAY*/
+.modal-backdrop{
+    background-color: #202C56;
+}
+.modal-dialog{
+    width: 90%;
+    max-width: 800px;
+}
+.modal-content{
+    border-radius: 0 !important;
+    background: #202C56;
+}
+.modal-content .modal-body{
+    color: #fff;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content .modal-body .btn-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    filter: invert(1);
+    opacity: 1;
+}
+
+/*TESTIMONIOS*/
+.testimonios p{
+    font-size: 1.5625rem;
+    font-weight: 300;
+    line-height: 150%;
+}
+.testimonios strong{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+.testimonios small{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: block;
+}
+@media (min-width: 992px){
+    .testimonios small{
+        width: 50%;
+    }
+}
+/*OWL*/
+.owl-carousel{
+    position: relative;
+}
+.owl-carousel img{
+    width: initial !important;
+    display: inline-block !important;
+}
+.owl-nav button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.owl-nav button i{
+    color: #3347FF;
+    font-size: 44px;
+}
+.owl-nav button span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00C9FF;
+    font-size: 20px;
+}
+.owl-nav button.owl-prev{
+    left: 0px;
+}
+.owl-nav button.owl-next{
+    right: 0px;
+}
+@media (min-width: 992px){
+    .owl-nav button.owl-prev{
+        left: -20px;
+    }
+    .owl-nav button.owl-next{
+        right: -20px;
+    }
+}
+@media (min-width: 1200px){
+    .owl-nav button.owl-prev{
+        left: -40px;
+    }
+    .owl-nav button.owl-next{
+        right: -40px;
+    }
+}
+@media (min-width: 1600px){
+    .owl-nav button.owl-prev{
+        left: -150px;
+    }
+    .owl-nav button.owl-next{
+        right: -150px;
+    }
 }

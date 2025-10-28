@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="interior page-productos-y-servicios">
@@ -50,7 +55,7 @@
 							<a class="nav-link" href="actualidad.html">Actualidad</a>
 						</li>
                         <div class="nav-item">
-							<a class="btn btn-primary" href="contacto.html">
+							<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
 								Contacto
 							</a>
 						</div>
@@ -86,8 +91,8 @@
         </div>
     </section>
     <!-- inner navigation -->
-	<nav class="d-none d-lg-block sticky-top" style="top:100px;">
-        <ul class="nav nav-pills justify-content-center gap-2 mt-4">
+	<nav class="d-none d-lg-block sticky-top inner-navigation" style="top:90px;">
+        <ul class="nav nav-pills justify-content-center gap-2">
             <li class="nav-item"><a class="nav-link" href="#sara-frms">S.A.R.A. FRMS</a></li>
             <li class="nav-item"><a class="nav-link" href="#sara-alert">S.A.R.A. Alert</a></li>
             <li class="nav-item"><a class="nav-link" href="#sara-whatsapp">S.A.R.A. Whatsapp</a></li>
@@ -96,7 +101,7 @@
         </ul>
     </nav>
 
-    <div class="container-fluid pb-5 border-bottom" id="sara-frms">
+    <div class="container pb-5 border-bottom" id="sara-frms">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <h3>S.A.R.A. <br>FRMS</h3>
@@ -105,14 +110,14 @@
                 <p class="lead m-0">Automatiza el control de fatiga para mejorar la seguridad y reducir costos. Monitorea riesgos críticos en tiempo real y optimiza la gestión laboral.</p>
             </div>
             <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-                <a class="btn btn-primary w-100 arrow-next" href="#reservations">
-                    Agendar una demo
+                <a class="btn btn-primary w-100 arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+                    Contacto
                 </a>
             </div>
         </div>
         <div class="row mt-5 pb-4">
             <div class="col-12">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=Zm5qCs1vehk" class="fancybox" data-fancybox="">
                     <img class="w-100" src="images/servicios-generic-thumbnail.jpg" alt="">
                 </a>
             </div>
@@ -136,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 pb-5 border-bottom" id="sara-alert">
+    <div class="container mt-5 pb-5 border-bottom" id="sara-alert">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <h3>S.A.R.A. <br>Alert</h3>
@@ -145,8 +150,8 @@
                 <p class="lead m-0">Automatiza el control de fatiga para mejorar la seguridad y reducir costos. Monitorea riesgos críticos en tiempo real y optimiza la gestión laboral.</p>
             </div>
             <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-                <a class="btn btn-primary w-100 arrow-next" href="#reservations">
-                    Agendar una demo
+                <a class="btn btn-primary w-100 arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+                    Contacto
                 </a>
             </div>
         </div>
@@ -176,7 +181,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 pb-5 border-bottom" id="sara-whatsapp">
+    <div class="container mt-5 pb-5 border-bottom" id="sara-whatsapp">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <h3>S.A.R.A. <br>Whatsapp</h3>
@@ -185,8 +190,8 @@
                 <p class="lead m-0">Automatiza el control de fatiga para mejorar la seguridad y reducir costos. Monitorea riesgos críticos en tiempo real y optimiza la gestión laboral.</p>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                <a class="btn btn-primary w-100 arrow-next" href="#reservations">
-                    Agendar una demo
+                <a class="btn btn-primary w-100 arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+                    Contacto
                 </a>
             </div>
         </div>
@@ -216,7 +221,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 pb-5 border-bottom" id="sara-ia">
+    <div class="container mt-5 pb-5 border-bottom" id="sara-ia">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <h3>S.A.R.A. <br>IA</h3>
@@ -225,8 +230,8 @@
                 <p class="lead m-0">Automatiza el control de fatiga para mejorar la seguridad y reducir costos. Monitorea riesgos críticos en tiempo real y optimiza la gestión laboral.</p>
             </div>
             <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-                <a class="btn btn-primary w-100 arrow-next" href="#reservations">
-                    Agendar una demo
+                <a class="btn btn-primary w-100 arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+                    Contacto
                 </a>
             </div>
         </div>
@@ -256,7 +261,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 pb-5 border-bottom" id="sara-servicios">
+    <div class="container mt-5 pb-5 border-bottom" id="sara-servicios">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <h3>S.A.R.A. <br>Servicios</h3>
@@ -265,8 +270,8 @@
                 <p class="lead m-0">Automatiza el control de fatiga para mejorar la seguridad y reducir costos. Monitorea riesgos críticos en tiempo real y optimiza la gestión laboral.</p>
             </div>
             <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-                <a class="btn btn-primary w-100 arrow-next" href="#reservations">
-                    Agendar una demo
+                <a class="btn btn-primary w-100 arrow-next" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+                    Contacto
                 </a>
             </div>
         </div>
@@ -299,7 +304,7 @@
 </main>
 
 <footer class="site-footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-11 col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between">
                 <!-- LOGO -->
@@ -314,7 +319,9 @@
                         <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="actualidad.html">Actualidad</a></li>
-                        <li><a href="contacto.html" class="btn btn-primary">Contacto</a></li>
+                        <li><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+								Contacto
+							</a></li>
                         <li><a href="#" class="btn btn-outline-primary">Trabaja con nosotros</a></li>
                     </ul>
                 </nav>
@@ -372,7 +379,24 @@
     </div>
 </footer>
 
+<!-- MODAL -->
+<div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h3>(Desarrollo para cotizacion de exámenes)</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="js/scripts.js"></script>
 </body>
 </html>

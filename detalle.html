@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="interior page-detalle">
@@ -50,7 +51,7 @@
 							<a class="nav-link" href="actualidad.html">Actualidad</a>
 						</li>
                         <div class="nav-item">
-							<a class="btn btn-primary" href="contacto.html">
+							<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
 								Contacto
 							</a>
 						</div>
@@ -71,7 +72,7 @@
     <section class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-11 rounded-4">
+                <div class="col-12 rounded-4">
                     <div class="row">
                         <div class="col-12 col-lg-9">
                             <p class="lead mb-0 opacity-50">Categoría | Autor | 25 de octubre de 2080</p>
@@ -88,12 +89,12 @@
     <section class="detalle-inner">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-11">
+                <div class="col-12">
                     <img class="w-100" src="images/detalle-demo-thumbnail.jpg" alt="">
                 </div>
             </div>
             <div class="row mt-5 justify-content-center">
-                <div class="col-12 col-lg-11">
+                <div class="col-12">
                     <div class="col-12 col-lg-6">
                         <p class="lead">Polpo nació con la misión de integrar tecnología, salud y seguridad en los entornos de mayor riesgo laboral. Desde sus inicios en la industria minera, hemos desarrollado soluciones innovadoras basadas en inteligencia artificial y automatización que hoy se</p>
                     </div>
@@ -110,7 +111,7 @@
 </main>
 
 <footer class="site-footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-11 col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between">
                 <!-- LOGO -->
@@ -125,7 +126,9 @@
                         <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="actualidad.html">Actualidad</a></li>
-                        <li><a href="contacto.html" class="btn btn-primary">Contacto</a></li>
+                        <li><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cotizacionModal" href="#cotizacionModal">
+								Contacto
+							</a></li>
                         <li><a href="#" class="btn btn-outline-primary">Trabaja con nosotros</a></li>
                     </ul>
                 </nav>
@@ -182,8 +185,20 @@
         
     </div>
 </footer>
-
+<!-- MODAL -->
+<div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h3>(Desarrollo para cotizacion de exámenes)</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
